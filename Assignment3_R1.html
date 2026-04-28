@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Geospatial Intelligence Dashboard | Mapbox Location Search</title>
+    
+    <!-- Mapbox GL JS & CSS -->
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.1.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.1.0/mapbox-gl.js"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/map-dashboard.css">
+</head>
+<body>
+
+<div class="dashboard-card">
+    <div class="card-header">
+        <h1>🗺️ Geospatial Intelligence Hub</h1>
+        <p>Mapbox powered | Search any location, fly to coordinate & custom marker</p>
+    </div>
+    <div class="map-shell">
+        <div class="search-control">
+            <input type="text" id="locationInput" class="search-input" 
+                   placeholder="e.g., Seven Mile Beach, Negril, Jamaica" 
+                   value="Seven Mile Beach, Negril">
+            <button id="searchBtn" class="search-btn">🔍 Fly to location</button>
+        </div>
+        <div id="map-container"></div>
+        <div id="searchStatus" class="status-msg">
+            ⏳ Initializing map and testing API connection...
+        </div>
+    </div>
+    <div class="info-footer">
+        ⚡ Geocoding via Mapbox API → converts address → lat/lng → interactive map flyTo + custom marker.<br>
+        📍 <strong>Open Browser Console (F12)</strong> to see detailed debug output.<br>
+        ✅ If map doesn't load, check that your internet can access mapbox.com
+    </div>
+</div>
+
+<!-- JavaScript Modules -->
+<script src="js/config.js"></script>
+<script src="js/map-module.js"></script>
+
+</body>
+</html>
