@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NYTimes News Feed</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1>NYTimes News</h1>
+
+  <!-- Search Bar -->
+  <input type="text" id="searchInput" placeholder="Search news...">
+  <button onclick="fetchNews()">Search</button>
+
+  <!-- Loading Spinner -->
+  <div id="spinner" class="spinner hidden"></div>
+
+  <!-- News Grid -->
+  <div id="newsContainer" class="grid"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
