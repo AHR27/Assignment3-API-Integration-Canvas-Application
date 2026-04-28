@@ -1,0 +1,22 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Day Mode */
+body.day {
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+/* Night Mode */
+body.night {
+    background-color: #121212;
+    color: #f4f4f4;
+}
+
+canvas {
+    background-color: transparent;
+    margin-top: 20px;
+}
